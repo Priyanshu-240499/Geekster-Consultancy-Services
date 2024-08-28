@@ -1,98 +1,108 @@
-
 .carousel-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  width: calc(100% * 1); /* Adjust for the number of visible cards */
-  animation: scroll 15s linear infinite;
-  gap: 10px;
-}
-.carousel-card {
-  flex: 0 0 33.3333%; /* Ensures 3 cards are visible at a time */
-  max-width: 33.3333%;
-  box-sizing: border-box;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
   }
-  100% {
-    transform: translateX(-100%);
+  
+  .carousel-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%; /* Ensures full width for all cards */
+    animation: scroll 15s linear infinite;
+    gap: 10px;
   }
-}
-.transition-opacity {
-  transition: opacity 0.5s ease-in-out;
-}
-.opacity-0 {
-  opacity: 0;
-}
-.animate-marquee {
-animation: marquee 25s linear infinite;
-}
-
-.animate-marquee-reverse {
-animation: marquee-reverse 25s linear infinite;
-}
-
-@keyframes marquee {
-from {
-transform: translateX(100%);
-}
-to {
-transform: translateX(-100%);
-}
-}
-
-@keyframes marquee-reverse {
-from {
-transform: translateX(-100%);
-}
-to {
-transform: translateX(100%);
-}
-}
-
-
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
+  
+  .carousel-card {
+    flex: 0 0 100%; /* Ensures only 1 card is visible at a time */
+    max-width: 100%;
+    box-sizing: border-box;
   }
-  100% {
-    transform: translateX(-100%);
+  
+  @media (min-width: 768px) {
+    .carousel-card {
+      flex: 0 0 50%; /* 2 cards visible for medium screens */
+      max-width: 50%;
+    }
   }
-}
-
-@keyframes marquee-reverse {
-  0% {
-    transform: translateX(-100%);
+  
+  @media (min-width: 1024px) {
+    .carousel-card {
+      flex: 0 0 33.3333%; /* 3 cards visible for large screens */
+      max-width: 33.3333%;
+    }
   }
-  100% {
-    transform: translateX(100%);
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
-}
-
-/* To ensure continuous scrolling */
-.marquee-content {
-  display: flex;
-}
-
-.marquee-row,
-.marquee-row-reverse {
-  display: flex;
-}
-
-.scrolling-header {
-width: 100% ;
-top: 0;
-position: fixed;
-left: 0;
-right: 0;
-z-index: 50; /* Ensure it's above other content */
-}
-
+  
+  .transition-opacity {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .opacity-0 {
+    opacity: 0;
+  }
+  
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+  
+  .animate-marquee-reverse {
+    animation: marquee-reverse 25s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marquee-reverse {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Continuous scrolling */
+  .marquee-content {
+    display: flex;
+  }
+  
+  .marquee-row,
+  .marquee-row-reverse {
+    display: flex;
+  }
+  
+  /* Scrolling header */
+  .scrolling-header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 50; /* Ensure it's above other content */
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Optional transition for smoothness */
+  }
+  
+  @media (max-width: 767px) {
+    .carousel-wrapper {
+      gap: 5px; /* Smaller gap for smaller screens */
+    }
+  
+    .scrolling-header {
+      padding: 0.5rem 1rem; /* Adjust padding for small screens */
+    }
+  }
+  
