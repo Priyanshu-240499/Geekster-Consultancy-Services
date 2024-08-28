@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8" />
+    <meta
+      name="robots"
+      content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <link rel="canonical" href="https://preline.co/" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Discover the difference that a professionally crafted website can make for your business."
+    />
+
+    <meta name="twitter:site" content="@preline" />
+    <meta name="twitter:creator" content="@preline" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Agency Demo Template Tailwind CSS | Preline UI, crafted with Tailwind CSS"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover the difference that a professionally crafted website can make for your business."
+    />
+    <meta
+      name="twitter:image"
+      content="https://preline.co/assets/img/og-image.png"
+    />
+
+    <meta property="og:url" content="https://preline.co/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Preline" />
+    <meta
+      property="og:title"
+      content="Agency Demo Template Tailwind CSS | Preline UI, crafted with Tailwind CSS"
+    />
+    <meta
+      property="og:description"
+      content="Discover the difference that a professionally crafted website can make for your business."
+    />
+    <meta
+      property="og:image"
+      content="https://preline.co/assets/img/og-image.png"
+    />
+
+    <!-- Title -->
+    <title>
+      Agency Demo Template Tailwind CSS | Preline UI, crafted with Tailwind CSS
+    </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://preline.co/favicon.ico" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme Check and Update -->
+    <script>
+      const html = document.querySelector("html");
+      const hsTheme = localStorage.getItem("hs_theme");
+      const prefersDarkScheme = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+
+      // Determine if light mode or dark mode should be applied
+      if (hsTheme === "light" || (hsTheme === "auto" && !prefersDarkScheme)) {
+        html.classList.add("light");
+        html.classList.remove("dark");
+      } else if (
+        hsTheme === "dark" ||
+        (hsTheme === "auto" && prefersDarkScheme)
+      ) {
+        html.classList.add("dark");
+        html.classList.remove("light");
+      } else {
+        // Default to light mode if no preference is set
+        html.classList.add("light");
+        html.classList.remove("dark");
+      }
+    </script>
+
+    <!-- CSS Preline -->
+    <link rel="stylesheet" href="https://preline.co/assets/css/main.min.css" />
+    <link rel="stylesheet" href="./index.css"/>
+  </head>
+
+  <body class="bg-neutral-900">
+    <!-- ========== HEADER ========== -->
+    <header
+  id="main-header"
+  class="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full transition-all duration-500"
+>
+  <nav
+    class="relative rounded-full max-w-[66rem] w-full bg-neutral-800 rounded-[28px] py-3 ps-5 pe-2 md:flex md:items-center md:justify-between md:py-0 mx-2 lg:mx-auto"
+    aria-label="Global"
+  >
+    <!-- Rest of your header content -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a
+        class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+        href="../../templates/agency/index.html"
+        aria-label="Preline"
+      >
+        <img
+          src="./assets/geekster_logo.png"
+          alt="Logo"
+          class="w-28 h-auto"
+        />
+      </a>
+      <!-- End Logo -->
+
+      <div class="md:hidden">
+        <button
+          type="button"
+          class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full bg-neutral-800 text-white disabled:opacity-50 disabled:pointer-events-none"
+          data-hs-collapse="#navbar-collapse"
+          aria-controls="navbar-collapse"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            class="hs-collapse-open:hidden flex-shrink-0 size-4"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" x2="21" y1="6" y2="6" />
+            <line x1="3" x2="21" y1="12" y2="12" />
+            <line x1="3" x2="21" y1="18" y2="18" />
+          </svg>
+          <svg
+            class="hs-collapse-open:block hidden flex-shrink-0 size-4"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Collapse -->
+    <div
+      id="navbar-collapse"
+      class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
+    >
+      <div
+        class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7"
+      >
+        <a
+          class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300"
+          href="../../templates/agency/index.html"
+          aria-current="page"
+          >Home</a
+        >
+        <a
+          class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300"
+          href="#"
+          >Stories</a
+        >
+        <a
+          class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300"
+          href="#"
+          >Reviews</a
+        >
+        <a
+          class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300"
+          href="#"
+          >Approach</a
+        >
+
+        <div
+          class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:py-4"
+        >
+          <button
+            type="button"
+            class="flex items-center w-full text-sm text-white hover:text-neutral-300 focus:outline-none focus:text-neutral-300"
+          >
+            About
+            <svg
+              class="flex-shrink-0 ms-1 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+
+          <div
+            class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 bg-neutral-800 md:shadow-md rounded-lg p-2 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5"
+          >
+            <a
+              class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white hover:text-neutral-300 font-medium focus:outline-none focus:text-neutral-300"
+              href="#"
+            >
+              About
+            </a>
+            <div
+              class="hs-dropdown relative [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover]"
+            >
+              <button
+                type="button"
+                class="w-full flex justify-between items-center py-2 px-3 text-sm text-white hover:text-neutral-300 font-medium focus:outline-none focus:text-neutral-300"
+              >
+                Sub Menu
+                <svg
+                  class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 md:mt-2 bg-neutral-800 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 top-0 end-full !mx-[10px]"
+              >
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white hover:text-neutral-300 font-medium focus:outline-none focus:text-neutral-300"
+                  href="#"
+                >
+                  About
+                </a>
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white hover:text-neutral-300 font-medium focus:outline-none focus:text-neutral-300"
+                  href="#"
+                >
+                  Downloads
+                </a>
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white hover:text-neutral-300 font-medium focus:outline-none focus:text-neutral-300"
+                  href="#"
+                >
+                  Team Account
+                </a>
+              </div>
+            </div>
+
+            <a
+              class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white hover:text-neutral-300 font-medium focus:outline-none focus:text-neutral-300"
+              href="#"
+            >
+              Downloads
+            </a>
+            <a
+              class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white hover:text-neutral-300 font-medium focus:outline-none focus:text-neutral-300"
+              href="#"
+            >
+              Team Account
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <a
+            class="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#32CD32] font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
+            href="../../templates/agency/index.html#contact"
+          >
+            Contact us
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Collapse -->
+  </nav>
+</header>
+
+
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content">
+      <!-- Hero -->
+      <div class="bg-neutral-900">
+        <div class="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
+          <h1 class="font-semibold text-white text-5xl md:text-6xl">
+            <span class="text-green-500">Innovative Solutions</span> <br />
+            for Digital Future
+          </h1>
+
+          <div class="max-w-4xl">
+            <p class="mt-5 text-neutral-400 text-lg">
+              <span class="text-green-500"> Empowering</span> your future with
+              innovative IT solutions.<span class="text-green-500"
+                >Seamless</span
+              >, <span class="text-green-500">secure</span> and
+              <span class="text-green-500">scalable</span> technology for your Digital Transformation journey.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Hero -->
+
+      <!-- Clients -->
+      <div class="relative overflow-hidden pt-4 bg-neutral-">
+        <svg
+          class="absolute -bottom-20 start-1/2 w-[1900px] transform -translate-x-1/2"
+          width="2745"
+          height="488"
+          viewBox="0 0 2745 488"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.5 330.864C232.505 403.801 853.749 527.683 1482.69 439.719C2111.63 351.756 2585.54 434.588 2743.87 487"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 308.873C232.505 381.81 853.749 505.692 1482.69 417.728C2111.63 329.765 2585.54 412.597 2743.87 465.009"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 286.882C232.505 359.819 853.749 483.701 1482.69 395.738C2111.63 307.774 2585.54 390.606 2743.87 443.018"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 264.891C232.505 337.828 853.749 461.71 1482.69 373.747C2111.63 285.783 2585.54 368.615 2743.87 421.027"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 242.9C232.505 315.837 853.749 439.719 1482.69 351.756C2111.63 263.792 2585.54 346.624 2743.87 399.036"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 220.909C232.505 293.846 853.749 417.728 1482.69 329.765C2111.63 241.801 2585.54 324.633 2743.87 377.045"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 198.918C232.505 271.855 853.749 395.737 1482.69 307.774C2111.63 219.81 2585.54 302.642 2743.87 355.054"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 176.927C232.505 249.864 853.749 373.746 1482.69 285.783C2111.63 197.819 2585.54 280.651 2743.87 333.063"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 154.937C232.505 227.873 853.749 351.756 1482.69 263.792C2111.63 175.828 2585.54 258.661 2743.87 311.072"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 132.946C232.505 205.882 853.749 329.765 1482.69 241.801C2111.63 153.837 2585.54 236.67 2743.87 289.082"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 110.955C232.505 183.891 853.749 307.774 1482.69 219.81C2111.63 131.846 2585.54 214.679 2743.87 267.091"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 88.9639C232.505 161.901 853.749 285.783 1482.69 197.819C2111.63 109.855 2585.54 192.688 2743.87 245.1"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 66.9729C232.505 139.91 853.749 263.792 1482.69 175.828C2111.63 87.8643 2585.54 170.697 2743.87 223.109"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 44.9819C232.505 117.919 853.749 241.801 1482.69 153.837C2111.63 65.8733 2585.54 148.706 2743.87 201.118"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 22.991C232.505 95.9276 853.749 219.81 1482.69 131.846C2111.63 43.8824 2585.54 126.715 2743.87 179.127"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+          <path
+            d="M0.5 1C232.505 73.9367 853.749 197.819 1482.69 109.855C2111.63 21.8914 2585.54 104.724 2743.87 157.136"
+            class="stroke-neutral-700/50"
+            stroke="currentColor"
+          />
+        </svg>
+
+        <div class="relative z-10">
+          <div class="max-w-5xl px-4 xl:px-0 mx-auto">
+            <div class="mb-4">
+              <h2 class="text-neutral-400">
+                <span class="text-green-500">O</span>ur <span class="text-green-500">E</span>xpertise
+              </h2>
+            </div>
+
+            <div class="flex justify-between gap-6">
+              <img
+                src="./assets/gen-AI.png"
+                alt="Logo"
+                class="w-28 h-auto rounded-md"
+              />
+              <img
+                src="./assets/Web Development.png"
+                alt="Logo"
+                class="w-28 h-auto rounded-md"
+              />
+              <img
+                src="./assets/Mobile Applications.png"
+                alt="Logo"
+                class="w-28 h-auto rounded-md"
+              />
+              <img
+                src="./assets/Devops.png"
+                alt="Logo"
+                class="w-28 h-auto rounded-md"
+              />
+              <img
+                src="./assets/Desktop-Application.png"
+                alt="Logo"
+                class="w-28 h-auto rounded-md"
+              />
+              <img
+                src="./assets/Data Analytics.png"
+                alt="Logo"
+                class="w-28 h-auto rounded-md"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Clients -->
+
+      <!-- Team -->
+      <div class="max-w-5xl px-4 xl:px-0 py-2 lg:py-10 mx-auto">
+        <div class="container flex justify-center mx-auto pt-16">
+          <div>
+            <h2
+              class="text-white text-center font-semibold text-2xl md:text-4xl md:leading-tight"
+            >
+             <span class="text-green-500">Our</span> Expertse Team
+            </h2>
+            <p
+              class="font-small text-center text-l text-white md:text-xl md:leading-normal xl:text-xl xl:leading-normal"
+            >
+              <span class="text-[#ff0]">"</span> Know About Our Expert Team
+              Driving Our Organization Forward<span class="text-[#ff0]">"</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full bg-neutral-900 dark:bg-neutral-900 px-10 pt-10">
+          <div class="container mx-auto">
+            <div class="text-center">
+              <div
+                id="card-container"
+                class="flex flex-wrap justify-center gap-6"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="card xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
+                >
+                  <div
+                    class="rounded-lg overflow-hidden shadow-md bg-white dark:bg-gray-900"
+                  >
+                    <div class="absolute -mt-20 w-full flex justify-center">
+                      <div class="h-32 w-32">
+                        <img
+                          src="./assets/Founder-1.png"
+                          alt="Display Picture of Andres Berlin"
+                          role="img"
+                          class="rounded-full object-cover h-full w-full shadow-md"
+                        />
+                      </div>
+                    </div>
+                    <div class="px-6 mt-16 pt-5 pb-5 rounded-md">
+                      <h1
+                        class="font-bold dark:text-white text-3xl text-center text-green-500 mb-1"
+                      >
+                        ANKIT MAGGU
+                      </h1>
+                      <p
+                        class="text-gray-800 dark:text-white text-sm text-center"
+                      >
+                        CO-Founder
+                      </p>
+                      <p
+                        class="text-center text-gray-600 dark:text-gray-200 text-base pt-3 font-normal"
+                      >
+                        "Our mission is to drive innovation by fostering a
+                        culture where technology and teamwork converge, creating
+                        transformative solutions for our clients."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                  class="card xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
+                >
+                  <div
+                    class="rounded-lg overflow-hidden shadow-md bg-white dark:bg-gray-900"
+                  >
+                    <div class="absolute -mt-20 w-full flex justify-center">
+                      <div class="h-32 w-32">
+                        <img
+                          src="./assets/Founder-2.png"
+                          alt="Display Picture of Andres Berlin"
+                          role="img"
+                          class="rounded-full object-cover h-full w-full shadow-md"
+                        />
+                      </div>
+                    </div>
+                    <div class="px-6 mt-16 pt-5 pb-5 rounded-md">
+                      <h1
+                        class="font-bold dark:text-white text-3xl text-green-500 text-center mb-1"
+                      >
+                        SAHIL MIGLANI
+                      </h1>
+                      <p
+                        class="text-gray-800 dark:text-white text-sm text-center"
+                      >
+                        CO-Founder
+                      </p>
+                      <p
+                        class="text-center text-gray-600 dark:text-gray-200 text-base pt-3 font-normal"
+                      >
+                        "Our vision is to revolutionize the IT landscape by
+                        delivering solutions that are both groundbreaking and
+                        aligned with our clients' strategic objectives."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Grid -->
+              <div
+                class="grid grid-cols-2 lg:grid-cols-4 gap-6 py-10 mx-auto max-w-7xl"
+              >
+                <!-- Team Member 1 -->
+                <div class="flex flex-col items-center gap-3 sm:gap-4">
+                  <img
+                    class="rounded-lg w-32 h-32 object-cover"
+                    src="./assets/leader-1.png"
+                    alt="Deepak Aggarwal"
+                  />
+                  <div class="text-center">
+                    <h3 class="font-medium text-green-500">Deepak Aggarwal</h3>
+                    <p class="mt-1 text-xs uppercase text-gray-500">
+                      Exp. - <span class="text-[#ff0]"> 8+ </span>years
+                    </p>
+                    <p class="mt-1 text-xs uppercase text-gray-500">
+                      Ex-Facebook London
+                    </p>
+                  </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="flex flex-col items-center gap-3 sm:gap-4">
+                  <img
+                    class="rounded-lg w-32 h-32 object-cover"
+                    src="./assets/leader-2.png"
+                    alt="Bittoo Aggarwal"
+                  />
+                  <div class="text-center">
+                    <h3 class="font-medium text-green-500">Bittoo Aggarwal</h3>
+                    <p class="mt-1 text-xs uppercase text-gray-500">
+                      Exp. - <span class="text-[#ff0]"> 4+ </span> years
+                    </p>
+                    <p class="mt-1 text-xs uppercase text-gray-500">
+                      Ex-Amazon, ION Trading
+                    </p>
+                  </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="flex flex-col items-center gap-3 sm:gap-4">
+                  <img
+                    class="rounded-lg w-32 h-32 object-cover"
+                    src="./assets/leader-4.png"
+                    alt="Rajoshree Biswas"
+                  />
+                  <div class="text-center">
+                    <h3 class="font-medium text-green-500">Rajoshree Biswas</h3>
+                    <p class="mt-1 text-xs uppercase text-gray-500">
+                      Exp. - <span class="text-[#ff0]"> 10+ </span> years
+                    </p>
+                    <p class="mt-1 text-xs uppercase text-gray-500">
+                      Ex- CTO Learnmall , HP
+                    </p>
+                  </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="flex flex-col items-center gap-3 sm:gap-4">
+                  <img
+                    class="rounded-lg w-32 h-32 object-cover"
+                    src="./assets/leader-3.png"
+                    alt="Vikas Ranjan"
+                  />
+                  <div class="text-center">
+                    <h3 class="font-medium text-green-500">Vikas Ranjan</h3>
+                    <p class="mt-1 text-xs uppercase text-gray-500">
+                      Exp. - <span class="text-[#ff0]"> 9+ </span> years
+                    </p>
+                    <p class="mt-1 text-xs uppercase text-gray-500">
+                      Ex-Zomato, Coinbase
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End Grid -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About US -->
+      <div class="bg-neutral-900">
+        <div class="max-w-5xl px-4 xl:px-0 py-10 lg:py-20 mx-auto">
+          <!-- Title -->
+          <div class="max-w-3xl mb-10 lg:mb-14">
+            <h2
+              class="text-white font-semibold text-2xl md:text-4xl md:leading-tight"
+            >
+              <span class="text-green-500">About</span> Us
+            </h2>
+            <p
+              class="font-small text-l text-white md:text-xl md:leading-normal xl:text-xl xl:leading-normal"
+            >
+              Our mission is to provide
+              <span class="text-[#ff0]">Personalized IT Solutions</span> that
+              streamline your operations and unlock new possibilities for
+              success..
+            </p>
+          </div>
+          <!-- End Title -->
+          <!-- mt-1 text-neutral-400 -->
+          <!-- Grid -->
+          <div
+            class="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center"
+          >
+            <div>
+              <!-- Blockquote -->
+              <blockquote>
+                <p class="mt-1 text-neutral-400">
+                  Founded in 2020, we have delivered
+                  <span class="text-green-500">40+</span> projects in
+                  <span class="font-bold text-neutral-400"
+                    >Generative AI, ML, Web, Desktop</span
+                  >, and
+                  <span class="font-bold text-neutral-400"
+                    >Mobile Based solutions</span
+                  >.
+                </p>
+                <br />
+                <p class="mt-1 text-neutral-400">
+                  Our <span class="text-green-500">75+</span> in-house experts,
+                  including leaders from
+                  <span class="font-bold text-neutral-400"
+                    >Amazon, Facebook, Yahoo, Pinterest, Coinbase, and
+                    Zomato</span
+                  >, drive our success. With a bench strength of over
+                  <span class="text-green-500">500+</span> internally trained
+                  professionals, we are equipped to meet diverse client needs.
+                </p>
+                <br />
+                <p class="mt-1 text-neutral-400">
+                  Our design philosophy emphasizes
+                  <span class="font-bold text-neutral-400"
+                    >data-driven designs, scalable cloud environments</span
+                  >
+                  and
+                  <span class="font-bold text-neutral-400"
+                    >robust security</span
+                  >
+                  to ensure
+                  <span class="font-bold text-neutral-400"
+                    >efficient and secure solutions</span
+                  >.
+                </p>
+              </blockquote>
+              <!-- End Blockquote -->
+            </div>
+            <!-- End Col -->
+
+            <div class="hidden md:block mb-24 md:mb-0">
+              <img
+                class="rounded-xl"
+                src="./assets/about us.jpg"
+                alt="Image Description"
+              />
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Grid -->
+        </div>
+      </div>
+      <!-- End About Us -->
+
+      <!-- Projects -->
+      <div class="bg-neutral-900">
+        <div class="max-w-5xl px-4 xl:px-0 py-24 mx-auto">
+          <!-- Title -->
+          <div class="max-w-3xl mb-10 lg:mb-14">
+            <h2
+              class="text-white font-semibold text-2xl md:text-4xl md:leading-tight"
+            >
+              <span class="text-green-500">Successful</span> Projects
+            </h2>
+            <p class="mt-1 text-neutral-400">
+              Global brands experience remarkable achievements through our
+              collaborations. From enhanced project outcomes and streamlined
+              workflows to accelerated time-to-market. Explore their success
+              projects here.
+            </p>
+          </div>
+          <!-- End Title -->
+
+          <!-- Card Grid -->
+          <div class="carousel-container overflow-hidden relative">
+            <div class="carousel-wrapper flex">
+              <!-- Card -->
+              <a
+                class="carousel-card group relative z-10 p-4 md:p-6 h-auto flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
+                href="#"
+              >
+                <div class="mb-5">
+                  <img
+                    class="w-full h-48 object-cover rounded-lg"
+                    src="./assets/Project-1.png"
+                    alt="Descriptive Image"
+                  />
+                  <div class="mt-5">
+                    <h3 class="font-medium text-lg text-white">
+                      SaaS Based Edtech platform
+                    </h3>
+                    <p class="mt-1 text-neutral-400">
+                      Geekster is an in-house product offering online tech
+                      education and training for engineers. We built a complete
+                      product suite including LMS, AI-based testing, and an
+                      auto-evaluation platform. Technology Stack: MERN (MongoDB,
+                      Express.js, React.js, Node.js)
+                    </p>
+                  </div>
+                </div>
+                <p class="mt-auto">
+                  <span
+                    class="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]"
+                    >Take a Look</span
+                  >
+                </p>
+              </a>
+
+              <a
+                class="carousel-card group relative z-10 p-4 md:p-6 h-auto flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
+                href="#"
+              >
+                <div class="mb-5">
+                  <img
+                    class="w-full h-48 object-cover rounded-lg"
+                    src="./assets/Project-2.png"
+                    alt="Descriptive Image"
+                  />
+                  <div class="mt-5">
+                    <h3 class="font-medium text-lg text-white">
+                      AI based Photo Editor
+                    </h3>
+                    <p class="mt-1 text-neutral-400">
+                      AlgoMage provides a machine learning-driven platform for
+                      photo editing. Featured on Shark Tank recently, we helped
+                      them develop their desktop app using Electron.js
+                      Technology Stack: Electron.js, Python, AI and Machine
+                      Learning
+                    </p>
+                  </div>
+                </div>
+                <p class="mt-auto">
+                  <span
+                    class="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]"
+                    >Take a Look</span
+                  >
+                </p>
+              </a>
+
+              <a
+                class="carousel-card group relative z-10 p-4 md:p-6 h-auto flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
+                href="#"
+              >
+                <div class="mb-5">
+                  <img
+                    class="w-full h-48 object-cover rounded-lg"
+                    src="./assets/Project-3.png"
+                    alt="Descriptive Image"
+                  />
+                  <div class="mt-5">
+                    <h3 class="font-medium text-lg text-white">
+                      AI Powered Drug Discovery for BioPharma
+                    </h3>
+                    <p class="mt-1 text-neutral-400">
+                      Built an AI engine that can generate structured nucleic
+                      acids for specific protein targets to rapidly design novel
+                      drugs. Technology Stack: Python, AI and Machine Learning
+                    </p>
+                  </div>
+                </div>
+                <p class="mt-auto">
+                  <span
+                    class="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]"
+                    >Take a Look</span
+                  >
+                </p>
+              </a>
+
+              <a
+                class="carousel-card group relative z-10 p-4 md:p-6 h-auto flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
+                href="#"
+              >
+                <div class="mb-5">
+                  <img
+                    class="w-full h-48 object-cover rounded-lg"
+                    src="./assets/Project-4.png"
+                    alt="Descriptive Image"
+                  />
+                  <div class="mt-5">
+                    <h3 class="font-medium text-lg text-white">
+                      Marketing Cloud
+                    </h3>
+                    <p class="mt-1 text-neutral-400">
+                      Built a data management and intelligent engagement
+                      platform involving multiple 3rd party integrations like
+                      WhatsApp, email, etc. Technology Stack: MEAN (MongoDB,
+                      Express.js, Angular.js, Node.js), Big Data (Hadoop)
+                    </p>
+                  </div>
+                </div>
+                <p class="mt-auto">
+                  <span
+                    class="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]"
+                    >Take a Look</span
+                  >
+                </p>
+              </a>
+
+              <a
+                class="carousel-card group relative z-10 p-4 md:p-6 h-auto flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
+                href="#"
+              >
+                <div class="mb-5">
+                  <img
+                    class="w-full h-48 object-cover rounded-lg"
+                    src="./assets/Project-5.png"
+                    alt="Descriptive Image"
+                  />
+                  <div class="mt-5">
+                    <h3 class="font-medium text-lg text-white">
+                      AI Based Recruitment Platform
+                    </h3>
+                    <p class="mt-1 text-neutral-400">
+                      Built an automated job application and interview
+                      scheduling platform for recruiters, integrating with
+                      various HR tools. Technology Stack: MERN (MongoDB,
+                      Express.js, React.js, Node.js), Next.js, Nest.js
+                    </p>
+                  </div>
+                </div>
+                <p class="mt-auto">
+                  <span
+                    class="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]"
+                    >Take a Look</span
+                  >
+                </p>
+              </a>
+
+              <a
+                class="carousel-card group relative z-10 p-4 md:p-6 h-auto flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
+                href="#"
+              >
+                <div class="mb-5">
+                  <img
+                    class="w-full h-48 object-cover rounded-lg"
+                    src="./assets/FitPAge.png"
+                    alt="Descriptive Image"
+                  />
+                  <div class="mt-5">
+                    <h3 class="font-medium text-lg text-white">
+                      Enhancement in Customer Engagement
+                    </h3>
+                    <p class="mt-1 text-neutral-400">
+                      With the aim of optimizing communication channels and
+                      driving higher customer retention rates, we built and
+                      deployed a seamless customer engagement platform.
+                      Technology Stack: Python, React.js, Django
+                    </p>
+                  </div>
+                </div>
+                <p class="mt-auto">
+                  <span
+                    class="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]"
+                    >Take a Look</span
+                  >
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <!-- End Card Grid -->
+        </div>
+      </div>
+      <!-- End Projects -->
+
+      <!-- Why choose us -->
+      <div class="bg-neutral-900 py-10">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="max-w-3xl mb-10 lg:mb-14">
+            <h2
+              class="text-white font-semibold text-2xl md:text-4xl md:leading-tight"
+            >
+              <span class="text-green-500">Why</span> Choose Us ?
+             
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Speed -->
+            <div class="bg-neutral-800 p-6 rounded-lg text-white text-center">
+              <img
+                src="./assets/speed.avif"
+                alt="Speed Logo"
+                class="rounded-full mx-auto mb-4 w-20 h-20"
+              />
+              <h3 class="text-lg font-bold">Speed</h3>
+              <p class="mt-2 text-sm text-neutral-400">
+                Launch your product within deadline weeks, ensuring you stay
+                ahead in the fast-paced digital landscape.
+              </p>
+            </div>
+
+            <!-- Cost-Effective -->
+            <div class="bg-neutral-800 p-6 rounded-lg text-white text-center">
+              <img
+                src="./assets/Cost Effective.png"
+                alt="Cost-Effective Logo"
+                class="mx-auto mb-4 rounded-full w-20 h-20"
+              />
+              <h3 class="text-lg font-bold">Cost-Effective</h3>
+              <p class="mt-2 text-sm text-neutral-400">
+                Get the most value for your investment with our efficient and
+                result-driven approach.
+              </p>
+            </div>
+
+            <!-- Expert Team -->
+            <div class="bg-neutral-800 p-6 rounded-lg text-white text-center">
+              <img
+                src="./assets/team.jpg"
+                alt="Expert Team Logo"
+                class="mx-auto rounded-full mb-4 w-20 h-20"
+              />
+              <h3 class="text-lg font-bold">Expert Team</h3>
+              <p class="mt-2 text-sm text-neutral-400">
+                Benefit from our team's deep industry knowledge and proven track
+                record, ensuring your project is in safe hands.
+              </p>
+            </div>
+
+            <!-- Future-Proof -->
+            <div class="bg-neutral-800 p-6 rounded-lg text-white text-center">
+              <img
+                src="./assets/Future Proof.png"
+                alt="Future Proof Logo"
+                class="mx-auto rounded-full mb-4 w-20 h-20"
+              />
+              <h3 class="text-lg font-bold">Future-Proof</h3>
+              <p class="mt-2 text-sm text-neutral-400">
+                Build a product that scales seamlessly with your user growth,
+                future-proofing your product for success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End why choose us -->
+
+      <!-- Technologies -->
+      <div
+        class="relative max-w-5xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
+      >
+        <!-- Background SVG -->
+
+        <!-- Gradient Overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-20 z-0"
+        ></div>
+
+        <!-- Content -->
+        <div class="relative z-10">
+          <!-- Title -->
+          <div class="max-w-3xl mb-10 lg:mb-14">
+            <h2
+              class="text-white font-semibold text-2xl md:text-4xl md:leading-tight"
+            >
+              <span class="text-green-500">Technologies</span> We Work With 
+            </h2>
+          </div>
+          <!-- End Title -->
+
+          <!-- Grid -->
+          <div
+            class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-2 lg:gap-4"
+          >
+            <div class="p-1 md:p-2 bg-gray-100 rounded-lg">
+              <img
+                class="py-1 lg:py-2 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-800"
+                src="./assets/Figma.png"
+                alt="Custom Image"
+              />
+            </div>
+            <div class="p-1 md:p-2 bg-gray-100 rounded-lg">
+              <img
+                class="py-1 lg:py-2 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-800"
+                src="/assets/React.png"
+                alt="Custom Image"
+              />
+            </div>
+            <div class="p-1 md:p-2 bg-gray-100 rounded-lg">
+              <img
+                class="py-1 lg:py-2 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-800"
+                src="./assets/Open-Ai.png"
+                alt="Custom Image"
+              />
+            </div>
+            <div class="p-1 md:p-2 bg-gray-100 rounded-lg">
+              <img
+                class="py-1 lg:py-2 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-800"
+                src="/assets/Hugging-face.png"
+                alt="Custom Image"
+              />
+            </div>
+            <div class="p-1 md:p-2 bg-gray-100 rounded-lg">
+              <img
+                class="py-1 lg:py-2 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-800"
+                src="/assets/Pyrotech.png"
+                alt="Custom Image"
+              />
+            </div>
+            <div class="p-1 md:p-2 bg-gray-100 rounded-lg">
+              <img
+                class="py-1 lg:py-2 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-800"
+                src="/assets/Firebase.png"
+                alt="Custom Image"
+              />
+            </div>
+            <div class="p-1 md:p-2 bg-gray-100 rounded-lg">
+              <img
+                class="py-1 lg:py-2 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-800"
+                src="/assets/mongoDB.png"
+                alt="Custom Image"
+              />
+            </div>
+            <div class="p-1 md:p-2 bg-gray-100 rounded-lg">
+              <img
+                class="py-1 lg:py-2 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-800"
+                src="/assets/React-Native.png"
+                alt="Custom Image"
+              />
+            </div>
+            <div class="p-1 md:p-2 bg-gray-100 rounded-lg">
+              <img
+                class="py-1 lg:py-2 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-800"
+                src="/assets/Node.png"
+                alt="Custom Image"
+              />
+            </div>
+            <div class="p-1 md:p-2 bg-gray-100 rounded-lg">
+              <img
+                class="py-1 lg:py-2 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-800"
+                src="/assets/Many-More.png"
+                alt="Custom Image"
+              />
+            </div>
+          </div>
+
+          <!-- End Grid -->
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- End Technologies -->
+
+      <!-- Approach -->
+      <div class="bg-neutral-900">
+        <!-- Approach -->
+        <div class="relative max-w-5xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+          <!-- Title -->
+          <div class="max-w-3xl mb-10 lg:mb-14">
+            <h2 class="text-white font-semibold text-2xl md:text-4xl md:leading-tight">
+              <span class="text-green-500">Our</span> Approach
+            </h2>
+            <p class="mt-1 text-neutral-400">
+              This profound insight guides our comprehensive strategy — from meticulous research and strategic planning to the seamless execution of brand development and website or product deployment.
+            </p>
+          </div>
+          <!-- End Title -->
+      
+          <!-- Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-start">
+            <!-- Image Column -->
+            <div class="relative aspect-w-16 aspect-h-9 lg:aspect-none">
+              <img
+                class="w-full object-cover rounded-xl"
+                src="https://images.unsplash.com/photo-1587614203976-365c74645e83?q=80&w=480&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Image Description"
+              />
+            </div>
+            <!-- End Image Column -->
+      
+            <!-- Timeline Column -->
+            <div>
+              <!-- Heading -->
+              <div class="mb-4">
+                <h3 class="text-xs font-medium uppercase text-[#ff0]">Steps</h3>
+              </div>
+              <!-- End Heading -->
+      
+              <!-- Timeline Items -->
+              <div class="space-y-8">
+                <!-- Item 1 -->
+                <div class="flex gap-x-5">
+                  <!-- Icon -->
+                  <div class="relative">
+                    <div class="relative z-10 flex items-center justify-center w-8 h-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
+                      1
+                    </div>
+                    <div class="absolute top-8 bottom-0 left-4 w-px bg-neutral-800"></div>
+                  </div>
+                  <!-- End Icon -->
+      
+                  <!-- Right Content -->
+                  <div class="flex-1">
+                    <p class="text-sm lg:text-base text-neutral-400">
+                      <span class="text-white">Market Research and Analysis:</span> Identify your target audience and understand their needs, preferences, and behaviors.
+                    </p>
+                  </div>
+                  <!-- End Right Content -->
+                </div>
+                <!-- End Item 1 -->
+      
+                <!-- Item 2 -->
+                <div class="flex gap-x-5">
+                  <!-- Icon -->
+                  <div class="relative">
+                    <div class="relative z-10 flex items-center justify-center w-8 h-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
+                      2
+                    </div>
+                    <div class="absolute top-8 bottom-0 left-4 w-px bg-neutral-800"></div>
+                  </div>
+                  <!-- End Icon -->
+      
+                  <!-- Right Content -->
+                  <div class="flex-1">
+                    <p class="text-sm lg:text-base text-neutral-400">
+                      <span class="text-white">Product Development and Testing:</span> Develop digital products or services that address the needs and preferences of your target audience.
+                    </p>
+                  </div>
+                  <!-- End Right Content -->
+                </div>
+                <!-- End Item 2 -->
+      
+                <!-- Item 3 -->
+                <div class="flex gap-x-5">
+                  <!-- Icon -->
+                  <div class="relative">
+                    <div class="relative z-10 flex items-center justify-center w-8 h-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
+                      3
+                    </div>
+                    <div class="absolute top-8 bottom-0 left-4 w-px bg-neutral-800"></div>
+                  </div>
+                  <!-- End Icon -->
+      
+                  <!-- Right Content -->
+                  <div class="flex-1">
+                    <p class="text-sm lg:text-base text-neutral-400">
+                      <span class="text-white">Marketing and Promotion:</span> Develop a comprehensive marketing strategy to promote your digital products or services.
+                    </p>
+                  </div>
+                  <!-- End Right Content -->
+                </div>
+                <!-- End Item 3 -->
+      
+                <!-- Item 4 -->
+                <div class="flex gap-x-5">
+                  <!-- Icon -->
+                  <div class="relative">
+                    <div class="relative z-10 flex items-center justify-center w-8 h-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
+                      4
+                    </div>
+                    <div class="absolute top-8 bottom-0 left-4 w-px bg-neutral-800"></div>
+                  </div>
+                  <!-- End Icon -->
+      
+                  <!-- Right Content -->
+                  <div class="flex-1">
+                    <p class="text-sm lg:text-base text-neutral-400">
+                      <span class="text-white">Launch and Optimization:</span> Launch your digital products or services to the market, closely monitoring their performance and user feedback.
+                    </p>
+                  </div>
+                  <!-- End Right Content -->
+                </div>
+                <!-- End Item 4 -->
+              </div>
+              <!-- End Timeline Items -->
+      
+              <a
+                class="group inline-flex items-center gap-x-2 py-2 px-3 bg-green-500 font-medium text-sm text-neutral-800 rounded-full focus:outline-none mt-6"
+                href="#"
+              >
+                <svg
+                  class="flex-shrink-0 w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  <path class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 group-hover:delay-100 transition" d="M14.05 2a9 9 0 0 1 8 7.94"></path>
+                  <path class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition" d="M14.05 6A5 5 0 0 1 18 10"></path>
+                </svg>
+                Schedule a call
+              </a>
+            </div>
+            <!-- End Timeline Column -->
+          </div>
+          <!-- End Grid -->
+        </div>
+      </div>
+      
+      <!-- End Approach -->
+
+      <!-- Our Clients -->
+      <div class="relative max-w-5xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <!-- Background SVG -->
+      
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-20 z-0"></div>
+      
+        <!-- Content -->
+        <div class="relative z-10">
+          <!-- Title -->
+          <div class="max-w-3xl mb-10 lg:mb-14">
+            <h2 class="text-white font-semibold text-2xl md:text-4xl md:leading-tight">
+              <span class="text-green-500">Partner</span> Companie<span class="text-yellow-400">s</span>
+            </h2>
+          </div>
+          <!-- End Title -->
+      
+          <!-- Marquee -->
+          <div class="marquee-container overflow-hidden">
+            <div class="marquee-content flex gap-10 animate-marquee">
+              <!-- Duplicate content to ensure smooth scrolling -->
+              <div class="marquee-item flex-shrink-0">
+                <img src="./assets/amazon.png" alt="Amazon" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/KPMG.png" alt="KPMG" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="./assets/ThoughtWorks.png" alt="ThoughtWorks" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/airtel.png" alt="Airtel" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/Razorpay.png" alt="Razorpay" class="h-12 w-auto" />
+              </div>
+              <!-- Add more marquee items as needed -->
+      
+              <!-- Duplicate items for smooth scrolling -->
+              <div class="marquee-item flex-shrink-0">
+                <img src="./assets/amazon.png" alt="Amazon" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/KPMG.png" alt="KPMG" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="./assets/ThoughtWorks.png" alt="ThoughtWorks" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/airtel.png" alt="Airtel" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/Razorpay.png" alt="Razorpay" class="h-12 w-auto" />
+              </div>
+
+              <!-- Duplicate items for smooth scrolling -->
+              <div class="marquee-item flex-shrink-0">
+                <img src="./assets/amazon.png" alt="Amazon" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/KPMG.png" alt="KPMG" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="./assets/ThoughtWorks.png" alt="ThoughtWorks" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/airtel.png" alt="Airtel" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/Razorpay.png" alt="Razorpay" class="h-12 w-auto" />
+              </div>
+            </div>
+          </div>
+      
+          <div class="marquee-container mt-10 overflow-hidden">
+            <div class="marquee-content flex gap-10 animate-marquee-reverse">
+              <!-- Duplicate content to ensure smooth scrolling -->
+              <div class="marquee-item flex-shrink-0">
+                <img src="./assets/Bharat X.png" alt="Bharat X" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/Decentro.png" alt="Decentro" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="./assets/radiansys.png" alt="Radiansys" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/BrightChamps.png" alt="BrightChamps" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/Bizongo.png" alt="Bizongo" class="h-12 w-auto" />
+              </div>
+              <!-- Add more marquee items as needed -->
+      
+              <!-- Duplicate items for smooth scrolling -->
+              <div class="marquee-item flex-shrink-0">
+                <img src="./assets/Bharat X.png" alt="Bharat X" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/Decentro.png" alt="Decentro" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="./assets/radiansys.png" alt="Radiansys" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/BrightChamps.png" alt="BrightChamps" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/Bizongo.png" alt="Bizongo" class="h-12 w-auto" />
+              </div>
+
+               <!-- Duplicate content to ensure smooth scrolling -->
+               <div class="marquee-item flex-shrink-0">
+                <img src="./assets/Bharat X.png" alt="Bharat X" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/Decentro.png" alt="Decentro" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="./assets/radiansys.png" alt="Radiansys" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/BrightChamps.png" alt="BrightChamps" class="h-12 w-auto" />
+              </div>
+              <div class="marquee-item flex-shrink-0">
+                <img src="/assets/Bizongo.png" alt="Bizongo" class="h-12 w-auto" />
+              </div>
+            </div>
+          </div>
+          <!-- End Marquee -->
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- End Our Clients -->
+
+      <!-- Testimonials -->
+      <div class="max-w-5xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class="max-w-3xl mb-10 lg:mb-14">
+          <h2
+            class="text-white font-semibold text-2xl md:text-4xl md:leading-tight"
+          >
+            <span class="text-green-500">Client</span> Testimonials
+          </h2>
+        </div>
+
+        <!-- Grid -->
+        <div
+          class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4 lg:gap-8"
+        >
+          <!-- Container 1 -->
+          <div class="text-center p-6 bg-neutral-800 rounded-lg">
+            <img
+              src="/assets/algomage.png"
+              alt="Algomage Logo"
+              class="w-auto h-20 mx-auto"
+            />
+            <div class="mt-4">
+              <p class="text-gray-400">
+                Collaborating with Geekster has great experience, Their
+                technical expertise and seamless integration of AI technologies
+                have made a substantial impact. The team's commitment to
+                delivering quality results is commendable.
+              </p>
+            </div>
+            <div class="flex justify-center gap-x-1 mt-3">
+              <!-- Star SVGs here -->
+            </div>
+          </div>
+
+          <!-- Container 2 -->
+          <div class="text-center p-6 bg-neutral-800 rounded-lg">
+            <img
+              src="/assets/terragon.png"
+              alt="Terragon Logo"
+              class="w-auto h-20 mx-auto"
+            />
+            <div class="mt-4">
+              <p class="text-gray-400">
+                The efficiency and innovation geekster brings to the table are
+                remarkable. Their AI solutions have streamlined our processes
+                and improved our service delivery. The team's professionalism
+                and expertise are truly impressive.
+              </p>
+            </div>
+            <div class="flex justify-center gap-x-1 mt-3">
+              <!-- Star SVGs here -->
+            </div>
+          </div>
+
+          <!-- Container 3 -->
+          <div class="text-center p-6 bg-neutral-800 rounded-lg">
+            <img
+              src="/assets/upshift.png"
+              alt="Company 3 Logo"
+              class="w-auto h-20 mx-auto"
+            />
+            <div class="mt-4">
+              <p class="text-gray-400">
+                Geekster exceptional AI solutions have transformed our marketing
+                strategies. Their team's deep understanding of AI and their
+                commitment to excellence have made a significant difference. We
+                highly value our partnership with them.
+              </p>
+            </div>
+            <div class="flex justify-center gap-x-1 mt-3">
+              <!-- Star SVGs here -->
+            </div>
+          </div>
+
+          <!-- Container 4 -->
+          <div class="text-center p-6 bg-neutral-800 rounded-lg">
+            <img
+              src="/assets/dianax.png"
+              alt="Company 4 Logo"
+              class="w-auto h-20 mx-auto"
+            />
+            <div class="mt-4">
+              <p class="text-gray-400">
+                Their AI-driven insights and solutions have significantly
+                improved our educational platforms. The team's professionalism
+                and innovative mindset are truly commendable.
+              </p>
+            </div>
+            <div class="flex justify-center gap-x-1 mt-3">
+              <!-- Star SVGs here -->
+            </div>
+          </div>
+        </div>
+        <!-- End Grid -->
+      </div>
+
+      <!-- End Testimonials -->
+
+      <!-- Contact -->
+      <div class="bg-neutral-900 py-10 lg:py-20">
+        <div class="relative max-w-5xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+          <!-- Title -->
+          <div class="max-w-3xl mb-10 lg:mb-14">
+            <h2 class="text-white font-semibold text-2xl md:text-4xl">
+              <span class="text-green-500">Contact </span>Us
+            </h2>
+            <p class="mt-1 text-neutral-400">
+              We're here to help with your inquiries.
+            </p>
+          </div>
+          <!-- End Title -->
+
+          <!-- Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16">
+            <!-- Contact Information -->
+            <div class="space-y-14">
+              <!-- Address -->
+              <div class="flex gap-x-5">
+                <svg
+                  class="flex-shrink-0 w-6 h-6 text-neutral-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <div>
+                  <h4 class="text-white font-semibold">Our Address:</h4>
+                  <address class="mt-1 text-neutral-400 text-sm not-italic">
+                    300 Bath Street, Tay House<br />
+                    Glasgow G2 4JR, United Kingdom
+                  </address>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex gap-x-5">
+                <svg
+                  class="flex-shrink-0 w-6 h-6 text-neutral-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"
+                  />
+                  <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
+                </svg>
+                <div>
+                  <h4 class="text-white font-semibold">Email Us:</h4>
+                  <a
+                    class="mt-1 text-neutral-400 text-sm"
+                    href="mailto:hello@example.com"
+                  >
+                    hello@example.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="flex gap-x-5">
+                <svg
+                  class="flex-shrink-0 w-6 h-6 text-neutral-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 15.5a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3v-2a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v2zM3 5h18M3 10h18M3 15h18M3 20h18"
+                  />
+                </svg>
+                <div>
+                  <h4 class="text-white font-semibold">Phone:</h4>
+                  <p class="mt-1 text-neutral-400 text-sm">+1 (555) 123-4567</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Contact Information -->
+
+            <!-- Contact Form -->
+            <div class="border-t border-neutral-800 pt-10 mt-10 md:mt-0">
+              <form>
+                <div class="space-y-4">
+                  <!-- Name -->
+
+                  <!-- Email -->
+                  <div class="relative">
+                    <input
+                      type="email"
+                      id="contact-email"
+                      class="peer p-4 block w-full bg-neutral-800 border-transparent rounded-lg text-sm text-white placeholder-transparent focus:outline-none focus:ring-0 focus:border-transparent"
+                      placeholder="Email"
+                    />
+                    <label
+                      for="contact-email"
+                      class="absolute top-0 left-0 p-4 h-full text-neutral-400 text-sm truncate pointer-events-none transition-transform duration-300 transform -translate-y-1.5 scale-75 origin-top-left peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-400 peer-focus:-translate-y-1.5 peer-focus:scale-75 peer-focus:text-neutral-400"
+                      >Email</label
+                    >
+                  </div>
+
+                  <!-- Phone -->
+                  <div class="relative">
+                    <input
+                      type="text"
+                      id="contact-phone"
+                      class="peer p-4 block w-full bg-neutral-800 border-transparent rounded-lg text-sm text-white placeholder-transparent focus:outline-none focus:ring-0 focus:border-transparent"
+                      placeholder="Phone"
+                    />
+                    <label
+                      for="contact-phone"
+                      class="absolute top-0 left-0 p-4 h-full text-neutral-400 text-sm truncate pointer-events-none transition-transform duration-300 transform -translate-y-1.5 scale-75 origin-top-left peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-400 peer-focus:-translate-y-1.5 peer-focus:scale-75 peer-focus:text-neutral-400"
+                      >Phone</label
+                    >
+                  </div>
+
+                  <!-- Project Description -->
+                  <div class="relative">
+                    <textarea
+                      id="contact-project"
+                      class="peer p-4 block w-full bg-neutral-800 border-transparent rounded-lg text-sm text-white placeholder-transparent focus:outline-none focus:ring-0 focus:border-transparent"
+                      placeholder="Project Description"
+                    ></textarea>
+                    <label
+                      for="contact-project"
+                      class="absolute top-0 left-0 p-4 h-full text-neutral-400 text-sm truncate pointer-events-none transition-transform duration-300 transform -translate-y-1.5 scale-75 origin-top-left peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-400 peer-focus:-translate-y-1.5 peer-focus:scale-75 peer-focus:text-neutral-400"
+                      >Project Description</label
+                    >
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <p class="text-xs text-neutral-500">
+                    All fields are required <span class="text-[#ff0]">*</span>
+                  </p>
+                  <button
+                    type="submit"
+                    class="mt-5 inline-flex items-center gap-x-2 py-2 px-4 bg-green-500 font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
+                  >
+                    Submit
+                    <svg
+                      class="w-4 h-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- End Contact Form -->
+          </div>
+          <!-- End Grid -->
+        </div>
+      </div>
+
+      <!-- End Contact -->
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+
+    <!-- JS Implementing Plugins -->
+
+    <!-- JS PLUGINS -->
+    <!-- Required plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+
+    <!-- JS INITIALIZATIONS -->
+    <script>
+     window.addEventListener("scroll", function () {
+  var header = document.querySelector("nav");
+  if (window.scrollY > 50) {
+    header.classList.add("scrolling-header");
+  } else {
+    header.classList.remove("scrolling-header");
+  }
+});
+
+      (function () {
+        function textareaAutoHeight(el, offsetTop = 0) {
+          el.style.height = "auto";
+          el.style.height = `${el.scrollHeight + offsetTop}px`;
+        }
+
+        (function () {
+          const textareas = ["#hs-tac-message"];
+
+          textareas.forEach((el) => {
+            const textarea = document.querySelector(el);
+            const overlay = textarea.closest(".hs-overlay");
+
+            if (overlay) {
+              const { element } = HSOverlay.getInstance(overlay, true);
+
+              element.on("open", () => textareaAutoHeight(textarea, 3));
+            } else textareaAutoHeight(textarea, 3);
+
+            textarea.addEventListener("input", () => {
+              textareaAutoHeight(textarea, 3);
+            });
+          });
+        })();
+      })();
+    </script>
+  </body>
+</html>

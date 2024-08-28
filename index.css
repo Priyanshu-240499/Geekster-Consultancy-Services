@@ -1,0 +1,98 @@
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: calc(100% * 1); /* Adjust for the number of visible cards */
+  animation: scroll 15s linear infinite;
+  gap: 10px;
+}
+.carousel-card {
+  flex: 0 0 33.3333%; /* Ensures 3 cards are visible at a time */
+  max-width: 33.3333%;
+  box-sizing: border-box;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.transition-opacity {
+  transition: opacity 0.5s ease-in-out;
+}
+.opacity-0 {
+  opacity: 0;
+}
+.animate-marquee {
+animation: marquee 25s linear infinite;
+}
+
+.animate-marquee-reverse {
+animation: marquee-reverse 25s linear infinite;
+}
+
+@keyframes marquee {
+from {
+transform: translateX(100%);
+}
+to {
+transform: translateX(-100%);
+}
+}
+
+@keyframes marquee-reverse {
+from {
+transform: translateX(-100%);
+}
+to {
+transform: translateX(100%);
+}
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* To ensure continuous scrolling */
+.marquee-content {
+  display: flex;
+}
+
+.marquee-row,
+.marquee-row-reverse {
+  display: flex;
+}
+
+.scrolling-header {
+width: 100% ;
+top: 0;
+position: fixed;
+left: 0;
+right: 0;
+z-index: 50; /* Ensure it's above other content */
+}
+
