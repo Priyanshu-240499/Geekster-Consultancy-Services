@@ -17,6 +17,7 @@
     max-width: 100%;
     box-sizing: border-box;
   }
+
   
   @media (min-width: 768px) {
     .carousel-card {
@@ -96,7 +97,7 @@
     transition: background-color 0.3s ease, padding 0.3s ease; /* Optional transition for smoothness */
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .carousel-wrapper {
       gap: 5px; /* Smaller gap for smaller screens */
     }
@@ -104,5 +105,8 @@
     .scrolling-header {
       padding: 0.5rem 1rem; /* Adjust padding for small screens */
     }
+  
   }
+  
+  
   
